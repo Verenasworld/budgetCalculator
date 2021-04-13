@@ -17,6 +17,7 @@
         background-repeat: no-repeat;
         background-position: center;
         transform: scale(0);
+        transition: opacity 0.2s ease-in, transform 0.2s ease-in;
 
     }
 
