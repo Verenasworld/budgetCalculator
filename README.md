@@ -1,4 +1,6 @@
-# Project1
+# Project1 - Budget Calculator 
+
+ using #angular #Typescript #sass #bulma 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
 
