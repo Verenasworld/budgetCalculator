@@ -3,6 +3,21 @@
 .root {
     display: flex;
     width: 100%;
+    position: relative;
+
+    .x-icon-button{
+        position: absolute;
+        height: 34px;
+        width: 34px;
+        background-color: $dark;
+        right:-17px;
+        border-radius: 50%;
+        top: -17px;
+        background-image: url('../../../assets/delete_icon.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+
+    }
 }
 
 .budget-item{
@@ -11,4 +26,35 @@
     background-color: $light-purple;
     padding: 10px;
     border-radius: 5px;
+    cursor: pointer;
+
+    .description{
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        font-size: 18px;
+        margin-left: 5px;
+
+    }
+    .amount{
+        padding: 5px;
+        border-radius: 3px;
+    }
+}
+
+.expense-column{
+    p{
+        color: $red;
+    }
+    .amount{
+        background-color: $light-red;
+    }
+}
+.income-column{
+    p{
+        color: $green;
+    }
+    .amount{
+        background-color: $light-green;
+    }
 }
