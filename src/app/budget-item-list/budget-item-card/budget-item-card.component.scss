@@ -16,7 +16,15 @@
         background-image: url('../../../assets/delete_icon.svg');
         background-repeat: no-repeat;
         background-position: center;
+        transform: scale(0);
 
+    }
+
+    &:hover{
+        .x-icon-button{
+            opacity: 1;
+            transform: scale(1);
+        }
     }
 }
 
