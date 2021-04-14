@@ -8,7 +8,8 @@
                    *ngIf= "item.amount >= 0"
                     [isIncome]="true" 
                     style="margin-bottom: 20px;" 
-                    ></app-budget-item-card>
+                    >
+                    </app-budget-item-card>
                 </div>
             </div>
         
@@ -16,10 +17,15 @@
         <div class="expenses-column">
             <h1>EXPENSES</h1>
             <div class="budget-items">
-            <app-budget-item-card [isIncome]="false" style="margin-bottom: 20px;"></app-budget-item-card>
-            <app-budget-item-card [isIncome]="false" style="margin-bottom: 20px;"></app-budget-item-card>
+                <div *ngFor= "let item of budgetItem">
+                    <app-budget-item-card 
+                   *ngIf= "item.amount < 0"
+                    [isIncome]="false" 
+                    style="margin-bottom: 20px;" 
+                    >
+                    </app-budget-item-card>
+                </div>
             </div>
-    
-        </div>
+         </div>
     </div>
 </section>
