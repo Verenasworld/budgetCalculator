@@ -7,13 +7,13 @@
 
 // Set your brand colors
 $purple: rgb(159, 104, 235);
-$light-purple: #d4aec8;
+$light-purple: #f7e5f1;
 $dark-purple: #8A4D76;
 $pink: #FA7C91;
 $dark:rgb(22, 28, 41);
 
 $blue: #008bcc;
-$light-blue: #aedaee;
+$light-blue: #bee7fa;
 $dark-blue: #0a384e;
 
 $green: #00cc86;
@@ -34,7 +34,8 @@ $link: $dark-purple;
 
 // Update some of Bulma's component variables
 $body-background-color: white;
-$control-border-width: 2px;
-$input-border-color: $light-blue;
-$input-shadow: none;
+$control-border-width: 1px;
+$input-border-color: transparent;
+$input-background-color: $light-purple;
+
 
