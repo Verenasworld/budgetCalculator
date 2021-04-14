@@ -9,6 +9,7 @@ import { BudgetItem } from 'src/shared/models/budget-item.model';
 })
 export class BudgetItemCardComponent implements OnInit {
 
+  @Input() isIncome: boolean = true;
   @Input() item: BudgetItem;
 
   constructor() { }
