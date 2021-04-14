@@ -8,7 +8,7 @@ import { BudgetItem } from 'src/shared/models/budget-item.model';
 })
 export class BudgetItemListComponent implements OnInit {
   @Input() budgetItem: BudgetItem[];
-  @Output() delete: EventEmitter<BudgetItem> = new EventEmitter;
+  @Output() delete: EventEmitter<BudgetItem> = new EventEmitter<BudgetItem>();
 
   constructor() { }
 
@@ -16,7 +16,7 @@ export class BudgetItemListComponent implements OnInit {
   }
 
   ondeleteButtonClicked(item: BudgetItem){
-    this.delete.emit;
+    this.delete.emit();
 
   }
 }

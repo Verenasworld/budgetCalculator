@@ -19,7 +19,7 @@ export class BudgetItemCardComponent implements OnInit {
   }
 
   onxButtonClick(){
-    this.xButtonClick.emit()
+    this.xButtonClick.emit(this.item);
   }
 
 }
