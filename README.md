@@ -1,6 +1,7 @@
 # Project1 - Budget Calculator 
 
  using #angular #Typescript #sass #bulma 
+ learn #formmodule #templatedrivenform #EventEmitter #propertybinding #eventbinding 
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0.
 
