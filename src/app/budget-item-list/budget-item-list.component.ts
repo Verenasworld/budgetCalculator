@@ -28,5 +28,14 @@ export class BudgetItemListComponent implements OnInit {
       width: '580px',
       data: item
     });
+
+    dialogRef.afterClosed().subscribe(result => {
+      //check if result has a value 
+      if (result){
+          // replace the item with the updated/ submitted item from the form 
+          //replace the old with the new updatet item
+          this.budgetItem[this.budgetItem.indexOf(item)] = result; 
+      }
+    });
   }
 }
