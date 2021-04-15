@@ -32,6 +32,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     BrowserAnimationsModule
   ],
   providers: [],
+  entryComponents: [EditItemModalComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
