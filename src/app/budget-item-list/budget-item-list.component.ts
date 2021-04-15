@@ -8,9 +8,12 @@ import { EditItemModalComponent } from '../edit-item-modal/edit-item-modal.compo
   templateUrl: './budget-item-list.component.html',
   styleUrls: ['./budget-item-list.component.scss']
 })
+
+
 export class BudgetItemListComponent implements OnInit {
   @Input() budgetItem: BudgetItem[];
   @Output() delete: EventEmitter<BudgetItem> = new EventEmitter<BudgetItem>();
+  @Output() update: EventEmitter<UpdateEvent> = new EventEmitter<UpdateEvent>();
 
   constructor(public dialog: MatDialog ) { }
 
@@ -32,10 +35,17 @@ export class BudgetItemListComponent implements OnInit {
     dialogRef.afterClosed().subscribe(result => {
       //check if result has a value 
       if (result){
-          // replace the item with the updated/ submitted item from the form 
-          //replace the old with the new updatet item
-          this.budgetItem[this.budgetItem.indexOf(item)] = result; 
+         this.update.emit({
+            old: item,
+            new: result
+          })
       }
     });
   }
+}
+
+export interface UpdateEvent{
+  old: BudgetItem;
+  new: BudgetItem;
+
 }
