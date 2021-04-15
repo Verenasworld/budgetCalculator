@@ -31,5 +31,9 @@ export class MainPageComponent implements OnInit {
      // replace the item with the updated/ submitted item from the form 
         //replace the old with the new updatet item
           this.budgetItems[this.budgetItems.indexOf(updateEvent.old)] = updateEvent.new; 
+
+          //update the total budget 
+          this.totalBudget -= updateEvent.old.amount;
+          this.totalBudget += updateEvent.new.amount;
   }
 }
