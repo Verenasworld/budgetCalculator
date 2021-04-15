@@ -17,6 +17,6 @@ export class EditItemModalComponent implements OnInit {
   }
 
   onSubmitted(updatedItem: BudgetItem){
-    
+    this.dialogRef.close(updatedItem);
   }
 }
