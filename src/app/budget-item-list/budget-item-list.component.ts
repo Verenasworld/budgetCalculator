@@ -47,5 +47,4 @@ export class BudgetItemListComponent implements OnInit {
 export interface UpdateEvent{
   old: BudgetItem;
   new: BudgetItem;
-
 }
