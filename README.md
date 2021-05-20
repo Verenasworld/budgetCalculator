@@ -1,3 +1,6 @@
+
+https://user-images.githubusercontent.com/51680972/118994359-8c90fb00-b986-11eb-9f2a-05c2a98f5cd4.mp4
+
 # Project1 - Budget Calculator 
 
  using #angular #typescript #sass #bulma #angularmaterial #matdialog
